@@ -1,0 +1,6 @@
+---
+menus:
+- title: home
+  url: /
+- title: categories
+  url: /categories

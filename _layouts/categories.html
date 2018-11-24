@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="site-map">
+  <div class="page-title">
+    <h1>Site Map</h1> 
+  </div>
+
+{% for category in site.categories %}
+
+  <h3 class="category-title">
+
+    {{ category | first }}
+
+  </h3>
+
+  {% capture category_name %}{{ category | first }}{% endcapture %}
+
+  <div class="posts-in-category">
+
+  {% for post in site.categories[category_name] %}
+
+    <div class="post-item">
+      <a class="post-link" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    </div>
+
+  {% endfor %}
+
+  </div>
+
+{% endfor %}
+
+</div>

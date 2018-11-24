@@ -1,0 +1,123 @@
+header {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $header-width;
+
+  border-right: solid 1px #000;
+  //background-image: url(image/header-image.jpeg);
+  //background-color: #808080;
+  background: repeating-linear-gradient(
+    135deg,
+    #808080,
+    #808080 10px,
+    #000 10px,
+    #000 20px
+  );
+  background-size: cover;
+  position: absolute;
+}
+
+header .wrapper {
+  position: absolute;;
+  width: 100%;
+  height: 100%;
+}
+
+header .header-top-area {
+  height: $header-height-top-area;
+}
+
+header .header-top-area .wrapper-title {
+  padding-top: $header-padding-title-area;
+}
+
+header .header-top-area .wrapper-title .site-title {
+  margin-right: 0px;
+  margin-bottom: 0px;
+
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header .header-top-area .wrapper-title .sub-title {
+  margin-top: 3px;
+  margin-right: 0px;
+
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+header .header-top-area .wrapper-profile {
+  margin-top: 40px;
+}
+
+header .header-top-area .wrapper-profile .profile-image {
+  display: block;
+  background-image: url(image/profile.png);
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .header-bottom-area {
+}
+
+header .header-page-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .header-page-list .header-page-link {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+header .header-page-list .header-page-link a {
+  text-decoration: none;
+  color: white;;
+  font-size: 16px;
+}
+
+#content {
+  position: relative;
+  margin-left: $header-width;
+  width: $content-width;
+}
+
+#content .wrapper {
+  padding-left: 20px;
+  margin: auto;
+}
+
+// style for "Site Map"
+.site-map .page-title {
+
+}
+
+.site-map .category-title {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.site-map .posts-in-category {
+  margin-bottom: 10px;
+}
+
+.site-map .posts-in-category .post-item a {
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+footer {
+  margin-left: $header-width;
+  bottom: 0;
+  position: absolute;
+}

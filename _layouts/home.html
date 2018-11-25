@@ -14,13 +14,13 @@ layout: default
 
       <article class="box-item-post">
         <span class="box-item-ribbon">
-          <span>
-            temp
+          <span style="background-color:{{ post.color }}">
+            {{ post.keyword }} 
           </span>
         </span>
         <div class="box-item-body">
           <div class="post-date">{{ post.date | date: date_format }} </div>
-          <a class="post-title" href="{{ post.url | relative_url }}">
+          <a class="post-title" href="{{ post.url | relative_url }}" style="color:{{ post.color }}">
             <h2>{{ post.title | escape }}</h2>
           </a>
 

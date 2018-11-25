@@ -157,10 +157,11 @@ header .header-page-list .header-page-link a {
   display: block;
   position: absolute;
   width: 100px;
-  background-color: #7aab13;
+  //background-color: #7aab13;
   color: #fff;
   font-size: .75rem;
   font-weight: bold;
+  font-family: $sans-serif-ko;
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
@@ -177,10 +178,10 @@ header .header-page-list .header-page-link a {
   left: 0;
   top: 100%;
   z-index: -1;
-  border-top: 3px solid #55780d;
+  border-top: 3px solid black;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-left: 3px solid #55780d;
+  border-left: 3px solid black;
 }
 
 .home .wrapper-post-list .box-item-ribbon span::after {
@@ -191,8 +192,8 @@ header .header-page-list .header-page-link a {
   top: 100%;
   right: 0px;
   z-index: -1;
-  border-top: 3px solid #55780d;
-  border-right: 3px solid #55780d;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
   border-bottom: 3px solid transparent;
   border-left: 3px solid transparent;
 }

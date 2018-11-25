@@ -223,9 +223,17 @@ header .header-page-list .header-page-link a {
 }
 
 .post .post-body {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 20px;
+  min-width: 500px;
+  padding: 30px 100px;
+}
+
+.post .post-body p {
+  line-height: 2;
+  letter-spacing: .01rem;
+}
+
+.post .post-body .highlight {
+  margin: 15px 0;
 }
 
 // style for "Site Map"

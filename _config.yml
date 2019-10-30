@@ -1,8 +1,8 @@
 ##############################################
 # Site wide configuration
 ##############################################
-title: Kouei's Blog
-sub-title: A software developer
+title: Kouei's Study
+sub-title: Backend Developer
 email: hkim3139@gmail.com 
 description: >- # this means to ignore newlines until "baseurl:"
   A simple developer blog powered by jekyll.

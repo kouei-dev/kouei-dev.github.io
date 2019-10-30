@@ -2,5 +2,5 @@
 menus:
 - title: home
   url: /
-- title: categories
-  url: /categories
+#- title: categories
+#  url: /categories

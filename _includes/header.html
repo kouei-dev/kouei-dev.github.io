@@ -4,11 +4,13 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <div class="header-top-area">
       <div class="wrapper-title">
-        <p class="site-title">{{ site.title | escape }}</p>
+        <a class="site-title" href="/">{{ site.title | escape }}</a>
         <p class='sub-title'>{{ site.sub-title | escape }}</p>
       </div>
       <div class="wrapper-profile">
         <div class="profile-image"></div>
+        <p class='profile-name'>{{ site.profile-name | escape }}</p>
+        <p class='profile-comment'>{{ site.profile-comment | escape }}</p>
       </div>
     </div>
 

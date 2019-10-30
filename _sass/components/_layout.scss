@@ -33,6 +33,8 @@ header .header-top-area .wrapper-title {
 }
 
 header .header-top-area .wrapper-title .site-title {
+  display: block;
+
   margin-right: 0px;
   margin-bottom: 0px;
 
@@ -40,15 +42,17 @@ header .header-top-area .wrapper-title .site-title {
   color: white;
   font-size: 25px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 header .header-top-area .wrapper-title .sub-title {
-  margin-top: 3px;
+  margin-top: 6px;
   margin-right: 0px;
 
   color: white;
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 header .header-top-area .wrapper-profile {
@@ -62,12 +66,32 @@ header .header-top-area .wrapper-profile .profile-image {
   background-position: center;
   width: 100px;
   height: 100px;
-  border-radius: 50%; 
+  border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
+header .header-top-area .wrapper-profile .profile-name {
+  margin-top: 15px;
+
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: $sans-serif;
+}
+
+header .header-top-area .wrapper-profile .profile-comment {
+  margin-top: 6px;
+
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  font-family: $sans-serif;
+}
+
 header .header-bottom-area {
+  margin-top: 20px;
 }
 
 header .header-page-list {
@@ -77,13 +101,15 @@ header .header-page-list {
 
 header .header-page-list .header-page-link {
   text-align: center;
-  margin-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 header .header-page-list .header-page-link a {
   text-decoration: none;
   color: white;;
   font-size: 16px;
+  font-weight: bold;
 }
 
 #content {
@@ -220,7 +246,7 @@ header .header-page-list .header-page-link a {
 
 .post .post-header .post-date {
   margin-top: 5px;
-  font-size: 12px; 
+  font-size: 12px;
 }
 
 .post .post-body {

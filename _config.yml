@@ -2,7 +2,7 @@
 # Site wide configuration
 ##############################################
 title: Kouei's Study
-sub-title: Backend Developer
+sub-title: Far a way to go
 email: hkim3139@gmail.com 
 description: >- # this means to ignore newlines until "baseurl:"
   A simple developer blog powered by jekyll.
@@ -19,3 +19,5 @@ markdown: kramdown
 # Custom configuration
 ##############################################
 profile-image: profile.png
+profile-name: Hangyoung Kim
+profile-comment: Backend Developer

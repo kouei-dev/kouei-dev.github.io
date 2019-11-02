@@ -3,7 +3,7 @@
 ##############################################
 title: Kouei's Study
 sub-title: Far a way to go
-email: hkim3139@gmail.com 
+email: hkim3139@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A simple developer blog powered by jekyll.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -14,6 +14,7 @@ encoding: utf-8
 ##############################################
 timezone: Asia/Seoul
 markdown: kramdown
+excerpt_separator: <!--snippet-->
 
 ##############################################
 # Custom configuration

@@ -8,28 +8,24 @@ layout: default
 
     <div class="wrapper-post-list">
 
-      {%- for post in site.posts -%}
+      {%- for post in site.posts limit: 15 -%}
 
       {%- assign date_format = "%b %-d, %Y" -%}
 
       <article class="box-item-post">
         <span class="box-item-ribbon">
           <span style="background-color:{{ post.color }}">
-            {{ post.keyword }} 
+            {{ post.keyword }}
           </span>
         </span>
-        <div class="box-item-body">
-          <div class="post-date">{{ post.date | date: date_format }} </div>
-          <a class="post-title" href="{{ post.url | relative_url }}" style="color:{{ post.color }}">
-            <h2>{{ post.title | escape }}</h2>
+        <div class="box-item">
+          <a class="box-item-link" href="{{ post.url | relative_url }}" style="color:{{ post.color }}">
+          <div class="box-item-body">
+            <div class="post-date">{{ post.date | date: date_format }}</div>
+            <div class="post-title" ><h2>{{ post.title | escape }}</h2></div>
+            <p class="post-snippet">{{ post.excerpt }}</p>
+          </div>
           </a>
-
-          {% if post.description %}
-
-          <p class="description">{{ post.description }}</p>
-
-          {% endif %}
-
         </div>
       </article>
 

@@ -151,21 +151,40 @@ header .header-page-list .header-page-link a {
   transition: all .3;
 }
 
-.home .wrapper-post-list .box-item-post .box-item-body {
+.home .wrapper-post-list .box-item-post .box-item {
+  width: 100%;
+  height: 100%;
+}
+
+.home .wrapper-post-list .box-item-post .box-item .box-item-body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
   padding: 1.8rem;
 }
 
-.home .wrapper-post-list .box-item-post .box-item-body .post-date {
+.home .wrapper-post-list .box-item-post .box-item .box-item-link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.home .wrapper-post-list .box-item-post .box-item .box-item-body .post-date {
   color: #b2bac2;
   font-size: .875rem;
 }
 
-.home .wrapper-post-list .box-item-post .box-item-body .post-title {
+.home .wrapper-post-list .box-item-post .box-item .box-item-body .post-title {
   text-decoration: none;
   font-size: .875rem;
   font-family: sans-serif;
   font-weight: 800;
   font-style: normal;
+}
+
+.home .wrapper-post-list .box-item-post .box-item .box-item-body .post-snippet {
+  margin-top: 20px;
 }
 
 .home .wrapper-post-list .box-item-ribbon {

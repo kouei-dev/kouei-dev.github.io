@@ -1,12 +1,13 @@
 header {
+  display: inline-block;
+
   top: 0;
   left: 0;
   bottom: 0;
   width: $header-width;
+  min-width: $header-width-min;
 
   border-right: solid 1px #000;
-  //background-image: url(image/header-image.jpeg);
-  //background-color: #808080;
   background: repeating-linear-gradient(
     135deg,
     #292929,
@@ -116,10 +117,6 @@ header .header-page-list .header-page-link a {
   position: relative;
   margin-left: $header-width;
   width: $content-width;
-}
-
-#content .wrapper {
-  margin: auto;
 }
 
 #content .home {

@@ -244,23 +244,24 @@ header .header-page-list .header-page-link a {
 }
 
 // style for post
-.post .post-keyword {
-  margin-left: 20px;
-  height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
+.post {
+  margin-left: 1px;
+}
+
+.post .post-color-bar {
+  height: 8px;
 }
 
 .post .post-header {
   width: 100%;
-  height: 120px;
-  color: white;
-  text-align: center;
+  height: 80px;
+  text-align: left;
+  font-size: 22px;
+  padding-left: $post-padding-left;
 }
 
 .post .post-header .post-title {
-  padding-top: 30px;
-  text-shadow: 2px 2px gray;
+  padding-top: 20px;
 }
 
 .post .post-header .post-date {
@@ -270,7 +271,9 @@ header .header-page-list .header-page-link a {
 
 .post .post-body {
   min-width: 500px;
-  padding: 30px 100px;
+  padding-left: $post-padding-left;
+  padding-right: $post-padding-left;
+  padding-top: 30px;
 }
 
 .post .post-body p {

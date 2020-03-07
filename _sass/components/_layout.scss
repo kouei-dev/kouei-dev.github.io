@@ -121,8 +121,9 @@
 
   #content {
     position: relative;
-    margin-left: $header-width;
     width: $content-width;
+    height: 100%;
+    margin-left: $header-width;
   }
 
   #content .home {
@@ -246,6 +247,59 @@
     border-left: 3px solid transparent;
   }
 
+  // style for post
+  .post {
+    height: 100%;
+    margin-left: 1px;
+  }
+
+  .post .post-background {
+    display: flex;
+    height: 100%;
+    background-color: #DFDFDF;
+  }
+
+  .post .post-body {
+    display: block;
+    width: 95%;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin: auto;
+    vertical-align: middle;
+  }
+
+  .post .post-header {
+    width: 100%;
+    height: 80px;
+    text-align: left;
+    font-size: 22px;
+    padding-left: $post-padding-left;
+  }
+
+  .post .post-header .post-title {
+    padding-top: 25px;
+  }
+
+  .post .post-header .post-date {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .post .post-content {
+    min-width: 500px;
+    padding-left: $post-padding-left;
+    padding-right: $post-padding-left;
+    padding-top: 30px;
+  }
+
+  .post .post-content p {
+    line-height: 2;
+    letter-spacing: .01rem;
+  }
+
+  .post .post-body .highlight {
+    margin: 15px 0;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -343,7 +397,8 @@
     margin-top: $header-height-mobile;
     margin-left: auto;
     margin-right: auto;
-    width: $content-width;
+    width: 100%;
+    height: 100%;
   }
 
   #content .home {
@@ -468,49 +523,59 @@
     border-left: 3px solid transparent;
   }
 
-}
+  // style for post
+  .post {
+    width: 100%;
+    height: 100%;
+    margin-left: 1px;
+  }
 
+  .post .post-background {
+    display: flex;
+    height: 100%;
+    background-color: #DFDFDF;
+  }
 
-// style for post
-.post {
-  margin-left: 1px;
-}
+  .post .post-body {
+    display: block;
+    width: 98%;
+    height: 98%;
+    background-color: #FFFFFF;
+    margin: auto;
+    vertical-align: middle;
+  }
 
-.post .post-color-bar {
-  height: 8px;
-}
+  .post .post-header {
+    width: 100%;
+    height: 80px;
+    text-align: left;
+    font-size: 22px;
+    padding-left: $post-padding-left-mobile;
+  }
 
-.post .post-header {
-  width: 100%;
-  height: 80px;
-  text-align: left;
-  font-size: 22px;
-  padding-left: $post-padding-left;
-}
+  .post .post-header .post-title {
+    padding-top: $post-header-title-padding-top-mobile;
+  }
 
-.post .post-header .post-title {
-  padding-top: 20px;
-}
+  .post .post-header .post-date {
+    margin-top: 5px;
+    font-size: 12px;
+  }
 
-.post .post-header .post-date {
-  margin-top: 5px;
-  font-size: 12px;
-}
+  .post .post-content {
+    padding-left: $post-padding-left-mobile;
+    padding-right: $post-padding-left-mobile;
+    padding-top: 30px;
+  }
 
-.post .post-body {
-  min-width: 500px;
-  padding-left: $post-padding-left;
-  padding-right: $post-padding-left;
-  padding-top: 30px;
-}
+  .post .post-content p {
+    line-height: 2;
+    letter-spacing: .01rem;
+  }
 
-.post .post-body p {
-  line-height: 2;
-  letter-spacing: .01rem;
-}
-
-.post .post-body .highlight {
-  margin: 15px 0;
+  .post .post-body .highlight {
+    margin: 15px 0;
+  }
 }
 
 // style for "Site Map"

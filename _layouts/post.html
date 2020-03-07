@@ -2,22 +2,24 @@
 layout: default
 ---
 <article class="post">
-  <div class="post-color-bar" style="background-color:{{ page.color }}"></div>
-  <div class="post-header">
-    <div class="post-title-body">
-      <h1 class="post-title">{{ page.title | escape }}</h1>
+  <div class="post-background">
+    <div class="post-body">
+      <div class="post-header">
+        <div class="post-title-body">
+          <h1 class="post-title">{{ page.title | escape }}</h1>
+        </div>
+        <div class="post-date-body">
+          <p class="post-date">
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+              {%- assign date_format = "%b %-d, %Y" -%}
+              {{ page.date | date: date_format }}
+            </time>
+          </p>
+        </div>
+      </div>
+      <div class="post-content">
+        {{ content }}
+      </div>
     </div>
-    <div class="post-date-body">
-      <p class="post-date">
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-          {%- assign date_format = "%b %-d, %Y" -%}
-          {{ page.date | date: date_format }}
-        </time>
-      </p>
-    </div>
-  </div>
-
-  <div class="post-body">
-    {{ content }}
   </div>
 </article>

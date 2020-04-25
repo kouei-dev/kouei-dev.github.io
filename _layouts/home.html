@@ -19,11 +19,13 @@ layout: default
           </span>
         </span>
         <div class="box-item">
-          <a class="box-item-link" href="{{ post.url | relative_url }}" style="color:{{ post.color }}">
+          <a class="box-item-link" href="{{ post.url | relative_url }}">
           <div class="box-item-body">
             <div class="post-date">{{ post.date | date: date_format }}</div>
-            <div class="post-title" ><h2>{{ post.title | escape }}</h2></div>
-            <p class="post-snippet">{{ post.excerpt }}</p>
+            <div class="post-title" style="color:black"><h2>{{ post.title | escape }}</h2></div>
+            <div class="post-snippet" style="color:black">
+              {{ post.excerpt | truncatewords: 40, '...' }}
+            </div>
           </div>
           </a>
         </div>

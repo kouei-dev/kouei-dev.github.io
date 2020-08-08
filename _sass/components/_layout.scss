@@ -34,7 +34,7 @@
   }
 
   header .header-top-area {
-    height: $header-height-top-area;
+    height: 30em;
   }
 
   header .header-top-area .wrapper-title {
@@ -43,25 +43,21 @@
 
   header .header-top-area .wrapper-title .site-title {
     visibility: visible;
-
     display: block;
-
-    margin-right: 0px;
-    margin-bottom: 0px;
-
-    text-align: center;
+    margin-left: 10%;
+    text-align: left;
     color: white;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
     text-decoration: none;
   }
 
   header .header-top-area .wrapper-title .sub-title {
+    margin-left: 10%;
     margin-top: 6px;
     margin-right: 0px;
-
     color: white;
-    text-align: center;
+    text-align: left;
     font-size: 12px;
     font-weight: bold;
   }
@@ -103,7 +99,6 @@
   }
 
   header .header-bottom-area {
-    margin-top: 20px;
   }
 
   header .header-page-list {
@@ -295,55 +290,59 @@
     max-width: 800px;
     height: 100%;
     background-color: #FFFFFF;
-    margin: auto;
+    margin-left: 60px;
     vertical-align: middle;
   }
 
   .post .post-header {
     text-align: left;
-    padding-left: $post-padding-left;
     padding-right: $post-padding-left;
-    margin-bottom: 2rem;
   }
 
   .post .post-header .post-title-body {
+    padding-top: 75px;
     font-size: 24px;
   }
 
+  .post .post-header .post-title-body h1 {
+    margin: 0;
+  }
+
   .post .post-header .post-title {
-    padding-top: 32px;
   }
 
   .post .post-header .post-date {
-    margin-top: 7px;
-    font-size: 13px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .post .post-content {
     min-width: 500px;
-    padding-left: $post-padding-left;
     padding-right: $post-padding-left;
-    padding-top: 30px;
-    line-height: 200%;
+    padding-top: 5px;
   }
 
   .post .post-content h2 {
-    line-height: 300%;
+    margin-top: 30px;
+    line-height: 150%;
   }
 
   .post .post-content h3 {
-    line-height: 300%;
+    margin-top: 30px;
+    line-height: 100%;
   }
 
   .post .post-content hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .post .post-content ul {
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+    line-height: 200%;
   }
 
   .post .post-content p {
@@ -648,26 +647,28 @@
     padding-left: $post-padding-left-mobile;
     padding-right: $post-padding-left-mobile;
     padding-top: 30px;
-    line-height: 200%;
   }
 
   .post .post-content h2 {
-    line-height: 300%;
+    margin-top: 30px;
+    line-height: 150%;
   }
 
   .post .post-content h3 {
-    line-height: 300%;
+    margin-top: 30px;
+    line-height: 100%;
   }
 
   .post .post-content hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .post .post-content ul {
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+    line-height: 200%;
   }
 
   .post .post-content p {
